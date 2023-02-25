@@ -1,18 +1,14 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-int _putchar(char c);
-int _isupper(int c);
-int _isdigit(int c);
-int mul(int a, int b);
-void print_numbers(void);
-int _putchar(char);
-void print_most_numbers(void);
-void more_numbers(void);
-void print_line(int n);
-void print_diagonal(int n);
-void print_square(int size);
-void print_triangle(int size);
-void print_number(int n);
-
-#endif /* MAIN_H */
+/**
+* _isdigit - Returns 1 if c is a digit
+* @c: takes in a character
+* Return: 0 for uppercase, 1 for lowercase
+**/
+int _isdigit(int c)
+{
+if (c >= '0' && c <= '9')
+return (1);
+else
+return (0);
+}
